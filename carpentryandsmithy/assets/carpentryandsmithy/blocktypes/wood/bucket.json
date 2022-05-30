@@ -1,0 +1,74 @@
+{
+	code: "woodbucket",
+	class: "BlockBucket",
+	behaviors: [
+		{name: "UnstableFalling"}, 
+		{ name: "RightClickPickup"}, 
+		{ name: "MilkingContainer" } 
+	],
+	entityClass: "Bucket",
+	attributes: {
+		handbook: { "groupBy": ["woodbucket-*"] },
+		liquidContainerProps: {
+			capacityLitres: 10,
+			transferSizeLitres: 1,
+			emptyShapeLoc: "game:shapes/block/wood/bucket/empty",
+			opaqueContentShapeLoc: "game:shapes/block/wood/bucket/contents",
+			liquidContentShapeLoc: "game:shapes/block/wood/bucket/liquidcontents",
+			liquidMaxYTranslate: 0.4375
+		}
+	},
+	creativeinventory: { "general": ["*"], "decorative": ["*"], "carpentry": ["*"] },
+	variantgroups: [
+		{ code: "metal", states: ["copper", "bismuth", "brass", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel", "molybdochalkos" ] },
+		{ code: "wood", states: ["aged"], loadFromProperties: "game:block/wood" }
+	],
+	shape: { base: "game:block/wood/bucket/empty" },
+	sidesolid: {
+		all: false
+	},
+	sideopaque: {
+		all: false
+	},
+	blockmaterial: "Wood",
+	textures: {
+		"sides": { base: "block/wood/rotate/{wood}", overlays: ["block/wood/bucketgeneric/sides"] },
+		"inner side": { base: "block/wood/rotate/{wood}", overlays: ["block/wood/bucketgeneric/inner side"] },
+		"iron": { base: "game:block/metal/ingot/{metal}" },
+		"normal1": { base: "game:block/cloth/linen/normal1" }
+	},
+	replaceable: 500,
+	resistance: 1.5,
+	maxStackSize: 4,
+	liquidSelectable: 1,
+	lightAbsorption: 0,
+	sounds: {
+		"place": "game:block/planks",
+		"hit": "game:block/planks",
+		"break": "game:block/planks",
+		"walk": "game:walk/wood"
+	},
+	collisionbox: {
+		x1: 0.25, y1: 0, z1: 0.25, x2: 0.75, y2: 0.5625, z2: 0.75
+	},
+	selectionbox: {
+		x1: 0.25, y1: 0, z1: 0.25, x2: 0.75, y2: 0.5625, z2: 0.75
+	},
+	materialDensity: 400,
+	tpHandTransform: {
+		translation: { x: -0.95, y: -1.06, z: -0.89 },
+		rotation: { x: 0, y: 0, z: 0 },
+		scale: 0.55
+	},
+	guiTransform: {
+		origin: { x: 0.5, y: 0.3, z: 0.5 },
+		scale: 1.75
+	},
+	fpHandTransform: {
+		scale: 1.5
+	},
+	groundTransform: {
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 2
+	}
+}

@@ -1,0 +1,64 @@
+{
+	code: "barrel",
+	class: "BlockBarrel",
+	entityClass: "Barrel",
+	behaviors: [ {name: "UnstableFalling"} ],
+	variantgroups: [
+		{ code: "metal", states: ["copper", "bismuth", "brass", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel", "molybdochalkos" ] },
+		{ code: "wood", states: ["aged"], loadFromProperties: "game:block/wood" }
+	],
+	shape: { base: "game:block/wood/barrel/empty" },
+	creativeinventory: { "general": ["*"], "decorative": ["*"], "carpentry": ["*"] },
+	blockmaterial: "Wood",
+	replaceable: 900,
+	resistance: 1.5,
+	maxStackSize: 1,
+	lightAbsorption: 1,
+	textures: {
+		"lid": { base: "block/wood/rotate/{wood}", overlays: ["block/wood/barrelgeneric/lid"] },
+		"sides": { base: "block/wood/rotate/{wood}", overlays: ["block/wood/barrelgeneric/sides"] },
+		"top-empty": { base: "block/wood/debarked/{wood}", overlays: ["block/wood/barrelgeneric/top-empty"] },
+		"iron": { base: "game:block/metal/ingot/{metal}" }
+	},
+	attributes: {
+		partialAttachable: true,
+		capacityLitres: 50
+	},
+	sideao: {
+		all: false
+	},
+	sidesolid: {
+		all: false
+	},
+	emitsideao: {
+		all: false
+	},
+	sideopaque: {
+		all: false
+	},
+	collisionbox: {
+		x1: 0.0625, y1: 0, z1: 0.0625,
+		x2: 0.9375, y2: 0.9375, z2: 0.9375
+	},
+	selectionbox: {
+		x1: 0.0625, y1: 0, z1: 0.0625,
+		x2: 0.9375, y2: 0.9375, z2: 0.9375
+	},
+	combustibleProps: {
+		burnTemperature: 600,
+		burnDuration: 20,
+	},
+	sounds: {
+		"place": "game:block/planks",
+		"hit": "game:block/planks",
+		"break": "game:block/planks",
+		"walk": "game:walk/wood"
+	},
+	materialDensity: 600,
+	heldTpIdleAnimation: "holdbothhandslarge", heldTpUseAnimation: "twohandplaceblock",
+	tpHandTransform: {
+		translation: { x: -1.45, y: -0.82, z: -0.54 },
+		rotation: { x: 12, y: 14, z: -73 },
+		scale: 0.38
+	}
+}

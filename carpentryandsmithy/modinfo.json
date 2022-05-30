@@ -1,0 +1,11 @@
+{
+  "type": "content",
+  "modid": "carpentryandsmithy",
+  "name": "Carpentry and Smithy",
+  "authors": ["BoilStone"],
+  "description": "To be",
+  "version": "1.0.0",
+  "dependencies": {
+    "game": "1.16.5"
+  }
+}

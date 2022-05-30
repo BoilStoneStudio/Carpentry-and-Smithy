@@ -1,0 +1,41 @@
+﻿{
+  code: "easteregg",
+  creativeinventory: { "general": [""] },
+  shape: { base: "easteregg" },
+  shapebytype: {
+    "*-metal": { base: "easteregg" },
+    "*-wood": { base: "kek" }    
+  },
+  textures: {
+    "gold": { base: "game:block/metal/ingot/gold" },
+    "blistersteel": { base: "game:block/metal/ingot/blistersteel" },
+    "acacia1": { base: "game:block/wood/planks/acacia1" }
+  },
+  blockmaterial: "Metal",
+  variantgroups: [
+    { code: "material", states: ["metal", "wood"] }
+  ],
+  sidesolid: {
+    all: false
+  },
+  sideopaque: {
+    all: false
+  },
+  replaceable: 400,
+  fertility: 5,
+  resistance: 3,
+  heldTpIdleAnimation: "holdbothhandslarge", heldTpUseAnimation: "twohandplaceblock",
+  collisionSelectionBoxesByType: {
+    "*-metal": [
+      {  x1: 0.1875, y1: 0, z1: 0.3125, x2: 0.8125, y2: 1.0625, z2: 0.6875 },
+    ],
+    "*-wood": [
+      { x1: 0.28125, y1: 0, z1: 0.21875, x2: 0.71875, y2: 0.5, z2: 0.78125 }
+    ],
+  },
+  tpHandTransform: {
+    translation: { x: -1.2, y: -1.1, z: -0.8 },
+    rotation: { x: -2, y: 25, z: -78 },
+    scale: 0.37
+  }
+}

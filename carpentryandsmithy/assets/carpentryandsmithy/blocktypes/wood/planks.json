@@ -1,0 +1,41 @@
+﻿{
+  code: "planks",
+  class: "BlockPlanks",
+  variantgroups: [
+    { code: "size", states: ["plates", "planksbig", "planksmiddle", "plankslittle"] },
+    { code: "wood", states: ["aged"], loadFromProperties: "game:block/wood" },
+    { code: "orientation", states: ["hor", "ver"] }
+  ],
+  creativeinventory: { "general": ["*-hor"], "construction": ["*-hor"], "carpentry": ["*-hor"] },
+  attributes: {
+    handbook: {
+      groupBy: ["planks-{size}-*"]
+    }
+  },
+  shape: { base: "game:block/basic/cube" },
+  blockmaterial: "Wood",
+  drawtype: "cube",
+  textures: {
+    all: { base: "block/wood/{size}/{wood}*", rotationByType: { "*-hor": 0, "*-ver": 90 }  }
+  },
+  resistance: 3.5,
+  sounds: {
+    "hit": "game:block/planks",
+    "break": "game:block/planks",
+    "place": "game:block/planks",
+    "walk": "game:walk/wood"
+  },
+  combustibleProps: {
+    burnTemperature: 800,
+    burnDuration: 20,
+  },
+  maxStackSize: 32,
+  materialDensity: 600,
+  heldTpIdleAnimation: "holdbothhandslarge", heldTpUseAnimation: "wohandplaceblock",
+  tpHandTransform: {
+    translation: { x: -1.2, y: -1.1, z: -0.8 },
+    rotation: { x: -2, y: 25, z: -78 },
+    scale: 0.37
+  },
+  drops: [{ type: "block", code: "planks-{size}-{wood}-hor"}]
+}

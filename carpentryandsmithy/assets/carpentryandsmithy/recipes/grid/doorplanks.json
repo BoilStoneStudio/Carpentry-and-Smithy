@@ -1,0 +1,36 @@
+[
+	{
+		ingredientPattern: "PLS,PHM,TBN",
+		ingredients: {
+			"P": { type: "item", code: "platelittle-*", name: "wood", quantity: 1 },
+			"T": { type: "item", code: "timberlittle-*", name: "wood", quantity: 7 },
+			"B": { type: "item", code: "plankbig-*", name: "wood", quantity: 1,
+				returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 66 } },
+			"L": { type: "item", code: "planklittle-*", name: "wood", quantity: 2 },
+			"H": { type: "item", code: "metalhinge-*", quantity: 2 },
+			"N": { type: "item", code: "metalnail-*", quantity: 20 },
+			"S": { type: "item", code: "game:saw-*", isTool: true  },
+			"M": { type: "item", code: "game:hammer-*", isTool: true  }
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "doorplanks-solid-iron-{wood}-north-down-closed-left", quantity: 1 }
+	},
+	{
+		ingredientPattern: "_LS,PHM,TBN",
+		ingredients: {
+			"P": { type: "item", code: "platelittle-*", name: "wood", quantity: 2 },
+			"T": { type: "item", code: "timberlittle-*", name: "wood", quantity: 7 },
+			"B": { type: "item", code: "plankbig-*", name: "wood", quantity: 1,
+				returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 66 } },
+			"L": { type: "item", code: "planklittle-*", name: "wood", quantity: 2 },
+			"H": { type: "item", code: "metalhinge-*", quantity: 2 },
+			"N": { type: "item", code: "metalnail-*", quantity: 20 },
+			"S": { type: "item", code: "game:saw-*", isTool: true  },
+			"M": { type: "item", code: "game:hammer-*", isTool: true  }
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "doorplanks-glassed-iron-{wood}-north-down-closed-left", quantity: 1 }
+	}
+]

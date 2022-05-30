@@ -1,0 +1,13 @@
+[
+	{
+		ingredientPattern: "H,P,L",
+		ingredients: {
+			"L": { type: "item", code: "metalleaf-*", name: "metal", quantity: 2 },
+			"P": { type: "item", code: "metalpin-*", name: "metal", quantity: 1 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true  }
+		},
+		width: 1,
+		height: 3,
+		output: { type: "item", code: "metalhinge-{metal}", quantity: 1 }
+	}
+]

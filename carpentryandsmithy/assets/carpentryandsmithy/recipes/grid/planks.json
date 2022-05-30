@@ -1,0 +1,46 @@
+[
+	{
+		ingredientPattern: "PPH,PPN",
+		ingredients: {
+			"P": { type: "item", code: "platelittle-*", name: "wood", quantity: 1 },
+			"N": { type: "item", code: "metalnail-*", quantity: 8 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true  }
+		},
+		width: 3,
+		height: 2,
+		output: { type: "block", code: "planks-plates-{wood}-hor", quantity: 2  }
+	},
+	{
+		ingredientPattern: "PPH,PPN",
+		ingredients: {
+			"P": { type: "item", code: "plankbig-*", name: "wood", quantity: 1 },
+			"N": { type: "item", code: "metalnail-*", quantity: 8 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true  }
+		},
+		width: 3,
+		height: 2,
+		output: { type: "block", code: "planks-planksbig-{wood}-hor", quantity: 2  }
+	},
+	{
+		ingredientPattern: "PPH,PPN",
+		ingredients: {
+			"P": { type: "item", code: "game:plank-*", name: "wood", quantity: 1 },
+			"N": { type: "item", code: "metalnail-*", quantity: 4 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true  }
+		},
+		width: 3,
+		height: 2,
+		output: { type: "block", code: "planks-planksmiddle-{wood}-hor", quantity: 1  }
+	},
+	{
+		ingredientPattern: "PPH,PPN",
+		ingredients: {
+			"P": { type: "item", code: "planklittle-*", name: "wood", quantity: 2 },
+			"N": { type: "item", code: "metalnail-*", quantity: 4 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true  }
+		},
+		width: 3,
+		height: 2,
+		output: { type: "block", code: "planks-plankslittle-{wood}-hor", quantity: 1  }
+	}
+]

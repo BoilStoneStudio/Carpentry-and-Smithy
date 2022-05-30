@@ -1,0 +1,12 @@
+﻿{
+  ingredient: { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: ["copper", "brass", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold", "iron", "lead", "tin", "zinc", "bismuth", "chromium", "platinum", "molybdochalkos", "meteoriciron", "steel"] },
+  pattern: [[
+    "#########",
+    "#########",
+    "_________",
+    "#########",
+    "#########"
+  ]],
+  name: "4 Strip",
+  output: { type: "item", code: "metalstrip-{metal}", stacksize: 4 }
+}

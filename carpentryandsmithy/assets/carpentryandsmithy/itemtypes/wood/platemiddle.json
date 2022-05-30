@@ -1,0 +1,67 @@
+﻿{
+  code: "platemiddle",
+  class: "ItemPlank",
+  behaviors: [{
+    name: "GroundStorable",
+    properties: {
+      layout: 'Stacking',
+      placeRemoveSound: 'game:sounds/block/planks',
+      stackingModel: 'block/platemiddlepile',
+      stackingTextures: {
+        wood: "block/wood/plates/{wood}1",
+        trunk: "block/wood/treetrunk/{wood}"
+      },
+      tessQuantityElements: 3,
+      stackingCapacity: 4,
+      collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.25, z2: 1 },
+      cbScaleYByLayer: 1,
+      transferQuantity: 1,
+      bulkTransferQuantity: 1
+    }
+  }],
+  variantgroups: [
+    { code: "wood", states: ["aged"], loadFromProperties: "game:block/wood" }
+  ],
+  maxstacksize: 64,
+  shape: { base: "item/wood/platemiddle" },
+  textures: {
+    wood: { base: "block/wood/plates/{wood}1" },
+    trunk: { base: "block/wood/treetrunk/{wood}" }
+  },
+  creativeinventory: { "general": ["*"], "items": ["*"], "carpentry": ["*"] },
+  attributes: {
+    handbook: {
+      groupBy: ["platemiddle-*"]
+    },
+  },
+  combustibleProps: {
+    burnTemperature: 700,
+    burnDuration: 6,
+  },
+  materialDensity: 700,
+
+  guiTransform: {
+    translation: { x: 0, y: 2, z: 0 },
+    rotation: { x: -55, y: 94, z: 27 },
+    origin: { x: 0.45, y: 0, z: 0.45 },
+    scale: 1.2
+  },
+  fpHandTransform: {
+    translation: { x: 0, y: 0, z: 0 },
+    rotation: { x: 3, y: -33, z: -25 },
+    origin: { x: 0.5, y: 0.1, z: 0.5 },
+    scale: 1.98
+  },
+  groundTransform: {
+    translation: { x: 0, y: 0, z: 0 },
+    rotation: { x: 0, y: 0, z: 0 },
+    origin: { x: 0.5, y: 0, z: 0.5 },
+    scale: 3.25
+  },
+  tpHandTransform: {
+    translation: { x: -0.6, y: -0.06, z: -0.44 },
+    rotation: { x: 109, y: 51, z: 1 },
+    origin: { x: 0.5, y: 0.1, z: 0.5 },
+    scale: 0.86
+  }
+}

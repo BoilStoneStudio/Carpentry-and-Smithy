@@ -1,0 +1,12 @@
+﻿{
+  ingredient: { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: [ "brass", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel", "zinc", "copper", "bismuth", "molybdochalkos"] },
+  pattern: [[
+    "######_######",
+    "_____________",
+    "######_######",
+    "_____________",
+    "######_######"
+  ]],
+  name: "6 Pin",
+  output: { type: "item", code: "metalpin-{metal}", stacksize: 6 }
+}

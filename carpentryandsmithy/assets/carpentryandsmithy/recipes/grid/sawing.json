@@ -1,0 +1,146 @@
+﻿[
+  {
+    ingredientPattern: "SL",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "timberbig-*", name: "wood",
+             returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 15 } }
+    },
+    width: 2,
+    height: 1,
+    recipeGroup: 1,
+    output: { type: "item", code: "platebig-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "SL",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "timbermiddle-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 7 } }
+    },
+    width: 2,
+    height: 1,
+    recipeGroup: 1,
+    output: { type: "item", code: "plankbig-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "SL",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "timberlittle-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 3 } }
+    },
+    width: 2,
+    height: 1,
+    recipeGroup: 1,
+    output: { type: "item", code: "planklittle-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "SL",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "platebig-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 15 } }
+    },
+    width: 2,
+    height: 1,
+    recipeGroup: 1,
+    output: { type: "item", code: "platemiddle-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "S,L",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "platebig-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 7 } }
+    },
+    width: 1,
+    height: 2,
+    recipeGroup: 2,
+    output: { type: "item", code: "timbermiddle-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "SL",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "platemiddle-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 15 } }
+    },
+    width: 2,
+    height: 1,
+    recipeGroup: 1,
+    output: { type: "item", code: "platelittle-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "S,L",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "platemiddle-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 3 } }
+    },
+    width: 1,
+    height: 2,
+    recipeGroup: 2,
+    output: { type: "item", code: "plankbig-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "S,L",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "platelittle-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}" } }
+    },
+    width: 1,
+    height: 2,
+    recipeGroup: 2,
+    output: { type: "item", code: "game:plank-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "SL",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "plankbig-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 7 } }
+    },
+    width: 2,
+    height: 1,
+    recipeGroup: 1,
+    output: { type: "item", code: "game:plank-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "S,L",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "plankbig-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}", quantity: 3 } }
+    },
+    width: 1,
+    height: 2,
+    recipeGroup: 2,
+    output: { type: "item", code: "timberlittle-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "S,L",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "game:plank-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}" } }
+    },
+    width: 1,
+    height: 2,
+    recipeGroup: 2,
+    output: { type: "item", code: "planklittle-{wood}", quantity: 2  }
+  },
+  {
+    ingredientPattern: "S,L",
+    ingredients: {
+      "S": { type: "item", code: "game:saw-*", isTool: true  },
+      "L": { type: "item", code: "planklittle-*", name: "wood",
+        returnedStack: { type: "item", code: "sawdust-{wood}" }}
+    },
+    width: 1,
+    height: 2,
+    recipeGroup: 2,
+    output: { type: "item", code: "game:stick", quantity: 2  }
+  }
+]

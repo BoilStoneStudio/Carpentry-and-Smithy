@@ -1,0 +1,10 @@
+﻿{
+  ingredient: { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: [ "brass", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel", "zinc", "copper", "bismuth", "molybdochalkos"] },
+  pattern: [[
+    "#_#_#_",
+    "######",
+    "######",
+  ]],
+  name: "2 Leaf",
+  output: { type: "item", code: "metalleaf-{metal}", stacksize: 2 }
+}
